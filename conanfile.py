@@ -10,14 +10,12 @@ class AddConan(ConanFile):
     options = {"shared": [True, False]}
     default_options = {"shared": False}
     generators = "cmake"
-    exports_sources = "src/*"
-    # scm = {
-    #     "type": "git",
-    #     "subfolder": "add",
-    #     "url": "https://github.com/Yihan1993/add.git",
-    #     "revision": "master",
-    #     "password": "405761278ckh"
-    # }
+    # exports_sources = "src/*"
+    scm = {
+        "type": "git",
+        "url": "auto",
+        "revision": "auto",
+    }
 
 #     def source(self):
 #         self.run("git clone https://github.com/Yihan1993/add.git")
